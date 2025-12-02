@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-lodge.jpg";
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
             className="font-display text-5xl md:text-7xl lg:text-8xl text-cream font-bold leading-tight mb-6 opacity-0 animate-fade-in-up drop-shadow-2xl"
             style={{ animationDelay: "0.4s", textShadow: "2px 4px 12px rgba(0,0,0,0.5)" }}
           >
-            Eritrean Summer
+            Dehai
             <span className="block text-gold drop-shadow-lg">Retreat</span>
           </h1>
           
@@ -56,17 +57,16 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div 
             className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-scale-in"
             style={{ animationDelay: "1s" }}
           >
-            <Button variant="hero" size="xl">
-              Register Now
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              Learn More
-            </Button>
+            <Link to="/gallery">
+              <Button variant="hero" size="xl">
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
