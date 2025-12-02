@@ -32,6 +32,12 @@ const Activities = () => {
       description: "Come together for a meaningful flag raising ceremony to honor our heritage and community spirit.",
       time: "Sunday Morning",
     },
+    {
+      icon: Flame,
+      title: "Bonfire Stories",
+      description: "Gather around the fire for storytelling, sharing wisdom, and building lasting connections under the stars.",
+      time: "Friday & Saturday Night",
+    },
   ];
 
   return (

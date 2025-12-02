@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
     { label: "About", href: "#about" },
     { label: "Activities", href: "#activities" },
     { label: "Testimonials", href: "#testimonials" },
-    { label: "Register", href: "#register" },
+    { label: "Details", href: "#register" },
   ];
 
   return (
@@ -32,15 +32,15 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <span 
               className={`font-display text-xl md:text-2xl font-bold transition-colors duration-300 ${
                 isScrolled ? "text-foreground" : "text-cream"
               }`}
             >
-              ESR<span className="text-gold">2025</span>
+              Dehai<span className="text-gold">Retreat</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -55,9 +55,14 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant={isScrolled ? "warm" : "hero"} size="sm">
-              Register Now
-            </Button>
+            <Link
+              to="/gallery"
+              className={`font-body text-sm font-medium transition-colors duration-300 hover:text-gold ${
+                isScrolled ? "text-foreground" : "text-cream"
+              }`}
+            >
+              Gallery
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -90,9 +95,15 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant={isScrolled ? "warm" : "hero"} size="sm" className="w-fit">
-                Register Now
-              </Button>
+              <Link
+                to="/gallery"
+                className={`font-body text-sm font-medium transition-colors ${
+                  isScrolled ? "text-foreground" : "text-cream"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Gallery
+              </Link>
             </div>
           </div>
         )}
