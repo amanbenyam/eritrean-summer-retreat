@@ -1,42 +1,36 @@
-import { Music, UtensilsCrossed, Flame, TreePine, Coffee, Moon } from "lucide-react";
+import { Music, UtensilsCrossed, Flame, TreePine, Coffee } from "lucide-react";
 
 const Activities = () => {
   const activities = [
     {
-      icon: UtensilsCrossed,
-      title: "Traditional Cuisine",
-      description: "Savor authentic Eritrean dishes prepared by community members, including injera, tsebhi, and more.",
-      time: "All Weekend",
-    },
-    {
-      icon: Music,
-      title: "Live Music & Dance",
-      description: "Experience the rhythms of traditional music and learn cultural dances under the stars.",
-      time: "Saturday Evening",
-    },
-    {
-      icon: Flame,
-      title: "Bonfire Stories",
-      description: "Gather around the fire for storytelling, sharing wisdom, and building connections.",
-      time: "Friday & Saturday Night",
-    },
-    {
       icon: TreePine,
-      title: "Nature Hikes",
-      description: "Explore scenic mountain trails and breathe in the fresh alpine air together.",
+      title: "Group Morning Hike",
+      description: "Start the day with an energizing group hike through scenic trails, breathing in fresh mountain air together.",
       time: "Saturday Morning",
     },
     {
-      icon: Coffee,
-      title: "Coffee Ceremony",
-      description: "Participate in the beloved traditional coffee ceremony, a cornerstone of Eritrean hospitality.",
-      time: "Sunday Morning",
+      icon: UtensilsCrossed,
+      title: "Community Barbeque",
+      description: "Enjoy delicious food and refreshing drinks at our community barbeque—a time to eat, laugh, and connect.",
+      time: "Saturday Afternoon",
     },
     {
-      icon: Moon,
-      title: "Stargazing",
-      description: "End your evenings gazing at the brilliant night sky, far from city lights.",
-      time: "Every Night",
+      icon: Coffee,
+      title: "Speaker Panel",
+      description: "Hear from inspiring community members as they share insights and stories on topics that matter to us.",
+      time: "Saturday Night",
+    },
+    {
+      icon: Music,
+      title: "ጓይላ Party",
+      description: "Dance the night away at our traditional ጓይላ celebration—live music, cultural rhythms, and pure joy.",
+      time: "Saturday Night",
+    },
+    {
+      icon: Flame,
+      title: "Flag Raising Ceremony",
+      description: "Come together for a meaningful flag raising ceremony to honor our heritage and community spirit.",
+      time: "Sunday Morning",
     },
   ];
 
