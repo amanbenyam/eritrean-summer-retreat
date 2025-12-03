@@ -65,13 +65,17 @@ export default {
           DEFAULT: "hsl(var(--gold))",
           dark: "hsl(var(--gold-dark))",
         },
-        terracotta: {
-          DEFAULT: "hsl(var(--terracotta))",
-          dark: "hsl(var(--terracotta-dark))",
+        "eritrean-green": {
+          DEFAULT: "hsl(var(--eritrean-green))",
+          light: "hsl(var(--eritrean-green-light))",
         },
-        forest: {
-          DEFAULT: "hsl(var(--forest))",
-          light: "hsl(var(--forest-light))",
+        "eritrean-blue": {
+          DEFAULT: "hsl(var(--eritrean-blue))",
+          light: "hsl(var(--eritrean-blue-light))",
+        },
+        "eritrean-red": {
+          DEFAULT: "hsl(var(--eritrean-red))",
+          light: "hsl(var(--eritrean-red-light))",
         },
         cream: "hsl(var(--cream))",
         sand: "hsl(var(--sand))",

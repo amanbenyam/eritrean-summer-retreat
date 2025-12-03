@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import eritreanFlag from "@/assets/eritrean-flag.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,12 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src={eritreanFlag} 
+              alt="Eritrean Flag" 
+              className="w-8 h-5 md:w-10 md:h-6 object-cover rounded-sm shadow-sm"
+            />
             <span 
               className={`font-display text-xl md:text-2xl font-bold transition-colors duration-300 ${
                 isScrolled ? "text-foreground" : "text-cream"
