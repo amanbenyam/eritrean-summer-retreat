@@ -49,11 +49,11 @@ const Hero = () => {
           >
             <div className="flex items-center gap-2 text-cream/90">
               <Calendar className="w-5 h-5 text-gold" />
-              <span className="font-body">August 15-17, 2025</span>
+              <span className="font-body">June 19th, 2026</span>
             </div>
             <div className="flex items-center gap-2 text-cream/90">
               <MapPin className="w-5 h-5 text-gold" />
-              <span className="font-body">Pine Ridge Lodge, Colorado</span>
+              <span className="font-body">Cedar Lakes, Ripley WV</span>
             </div>
           </div>
 

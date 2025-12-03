@@ -75,6 +75,17 @@ const Footer = () => {
                   (303) 555-1234
                 </a>
               </li>
+              <li className="flex items-center gap-3">
+                <Instagram className="w-5 h-5 text-gold" />
+                <a 
+                  href="https://www.instagram.com/dehai.retreat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-background/70 hover:text-gold transition-colors"
+                >
+                  @dehai.retreat
+                </a>
+              </li>
             </ul>
           </div>
         </div>
