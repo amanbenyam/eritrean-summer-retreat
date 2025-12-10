@@ -37,23 +37,18 @@ const Footer = () => {
             <h4 className="font-display text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3 font-body">
               <li>
-                <a href="#" className="text-background/70 hover:text-gold transition-colors">
+                <a href="#about" className="text-background/70 hover:text-gold transition-colors">
                   About the Event
                 </a>
               </li>
               <li>
-                <a href="#" className="text-background/70 hover:text-gold transition-colors">
-                  Activities Schedule
+                <a href="#schedule" className="text-background/70 hover:text-gold transition-colors">
+                  Schedule
                 </a>
               </li>
               <li>
-                <a href="#" className="text-background/70 hover:text-gold transition-colors">
-                  Registration
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-background/70 hover:text-gold transition-colors">
-                  FAQ
+                <a href="#testimonials" className="text-background/70 hover:text-gold transition-colors">
+                  Testimonials
                 </a>
               </li>
             </ul>
