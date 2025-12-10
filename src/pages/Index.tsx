@@ -1,9 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Activities from "@/components/Activities";
+import Schedule from "@/components/Schedule";
 import Testimonials from "@/components/Testimonials";
-import Registration from "@/components/Registration";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,14 +13,11 @@ const Index = () => {
       <section id="about">
         <About />
       </section>
-      <section id="activities">
-        <Activities />
+      <section id="schedule">
+        <Schedule />
       </section>
       <section id="testimonials">
         <Testimonials />
-      </section>
-      <section id="register">
-        <Registration />
       </section>
       <Footer />
     </main>
