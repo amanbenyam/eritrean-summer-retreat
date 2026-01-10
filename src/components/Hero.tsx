@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-lodge.jpg";
+import RegistrationDialog from "@/components/RegistrationDialog";
 
 const Hero = () => {
   return (
@@ -57,7 +58,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Buttons */}
           <div 
             className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-scale-in"
             style={{ animationDelay: "1s" }}
@@ -67,6 +68,7 @@ const Hero = () => {
                 Learn More
               </Button>
             </Link>
+            <RegistrationDialog />
           </div>
         </div>
       </div>
