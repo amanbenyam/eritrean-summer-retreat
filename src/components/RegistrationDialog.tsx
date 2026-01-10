@@ -127,7 +127,7 @@ const RegistrationDialog = ({ trigger }: RegistrationDialogProps) => {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         {trigger || (
-          <Button variant="heroOutline" size="xl">
+          <Button variant="hero" size="xl">
             Register
           </Button>
         )}
@@ -149,7 +149,7 @@ const RegistrationDialog = ({ trigger }: RegistrationDialogProps) => {
                 id="firstName"
                 value={formData.firstName}
                 onChange={(e) => handleInputChange("firstName", e.target.value)}
-                placeholder="John"
+                placeholder="Enter first name"
                 className={errors.firstName ? "border-destructive" : ""}
               />
               {errors.firstName && (
@@ -162,7 +162,7 @@ const RegistrationDialog = ({ trigger }: RegistrationDialogProps) => {
                 id="lastName"
                 value={formData.lastName}
                 onChange={(e) => handleInputChange("lastName", e.target.value)}
-                placeholder="Doe"
+                placeholder="Enter last name"
                 className={errors.lastName ? "border-destructive" : ""}
               />
               {errors.lastName && (
@@ -178,7 +178,7 @@ const RegistrationDialog = ({ trigger }: RegistrationDialogProps) => {
               type="email"
               value={formData.email}
               onChange={(e) => handleInputChange("email", e.target.value)}
-              placeholder="john@example.com"
+              placeholder="Enter email address"
               className={errors.email ? "border-destructive" : ""}
             />
             {errors.email && (
@@ -193,7 +193,7 @@ const RegistrationDialog = ({ trigger }: RegistrationDialogProps) => {
               type="tel"
               value={formData.phone}
               onChange={(e) => handleInputChange("phone", e.target.value)}
-              placeholder="(555) 123-4567"
+              placeholder="Enter phone number"
               className={errors.phone ? "border-destructive" : ""}
             />
             {errors.phone && (
