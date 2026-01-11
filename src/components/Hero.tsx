@@ -24,7 +24,7 @@ const Hero = () => {
             className="text-gold font-body text-lg md:text-xl tracking-widest uppercase mb-4 opacity-0 animate-fade-in drop-shadow-lg"
             style={{ animationDelay: "0.2s" }}
           >
-            Summer 2025
+            Summer 2026
           </p>
           
           <h1 
